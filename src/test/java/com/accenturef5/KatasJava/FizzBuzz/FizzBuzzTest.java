@@ -35,4 +35,16 @@ public class FizzBuzzTest {
         //THEN
         assertEquals("Buzz", sut);
     }
+    @Test
+    void siNumEsMultiploDe3YDe5RetFizzBuzz() {
+
+        //GIVEN
+        var fizzbuzz = new FizzBuzz();
+
+        //WHEN
+        var sut = fizzbuzz.execute(15);
+
+        //THEN
+        assertEquals("FizzBuzz", sut);
+    }
 }
