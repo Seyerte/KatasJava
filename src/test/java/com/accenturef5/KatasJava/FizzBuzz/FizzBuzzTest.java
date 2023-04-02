@@ -1,4 +1,4 @@
-package com.accenturef5.KatasJava;
+package com.accenturef5.KatasJava.FizzBuzz;
 
 import com.accenturef5.KatasJava.FizzBuzz.FizzBuzz;
 import org.junit.jupiter.api.BeforeEach;
@@ -22,5 +22,17 @@ public class FizzBuzzTest {
 
         //THEN
         assertEquals("Fizz", sut);
+    }
+    @Test
+    void siNumEsMultiploDe5RetBuzz() {
+
+        //GIVEN
+        var fizzbuzz = new FizzBuzz();
+
+        //WHEN
+        var sut = fizzbuzz.execute(5);
+
+        //THEN
+        assertEquals("Buzz", sut);
     }
 }
